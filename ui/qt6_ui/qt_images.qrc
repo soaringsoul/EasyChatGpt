@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/splash_main.png</file>
+    <file>img/mywechat.jpeg</file>
+  </qresource>
+  <qresource prefix="ico">
+    <file>icons/gd_logo_white.png</file>
+    <file>icons/gd_logo_white.png</file>
+    <file>icons/search_blue.png</file>
+    <file>icons/drop_down.png</file>
+    <file>icons/city.png</file>
+    <file>icons/china_map.png</file>
+  </qresource>
+</RCC>

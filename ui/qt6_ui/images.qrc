@@ -1,0 +1,36 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>images/icons/favicon.png</file>
+    <file>images/icons/cil-mood-very-good.png</file>
+    <file>images/icons/cil-people.png</file>
+    <file>images/icons/chrome.png</file>
+    <file>images/icons/forward.png</file>
+    <file>images/icons/back.png</file>
+    <file>images/icons/vip.png</file>
+    <file>images/icons/poi.png</file>
+    <file>images/icons/API.png</file>
+    <file>images/icons/switch_left.png</file>
+    <file>images/icons/icon_menu.png</file>
+    <file>images/icons/export_data.png</file>
+    <file>images/icons/polygon_16px.png</file>
+    <file>images/icons/icon_drop_down.png</file>
+    <file>images/icons/cil-dialpad.png</file>
+    <file>images/icons/icon_member.png</file>
+    <file>images/icons/icon_settings.png</file>
+    <file>images/icons/icon_close.png</file>
+    <file>images/icons/cil-home.png</file>
+    <file>images/icons/cil-menu.png</file>
+    <file>images/icons/cil-align-center.png</file>
+    <file>images/images/renwenbang.png</file>
+  </qresource>
+  <qresource prefix="rwb_icons">
+    <file>images/rwb_icons/rwb_logo.png</file>
+    <file>images/rwb_icons/help.png</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>images/images/rwb_slogn.png</file>
+  </qresource>
+  <qresource prefix="splash">
+    <file>images/images/app_splash.png</file>
+  </qresource>
+</RCC>

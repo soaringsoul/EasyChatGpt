@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+NOPUSH/
+NSIS/
+*.ipynb
+prompts/
+*.ui
 __pycache__/
 *.py[cod]
 *$py.class
@@ -127,3 +132,19 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# other
+config.ini
+config.pkl
+config.pickle
+.directory
+.idea/
+*.log
+
+src/
+.config
+*.bak
+login_assister.exe
+
+# MacOS
+.DS_Store
