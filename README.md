@@ -34,8 +34,7 @@ ChatGPT是一个由OpenAI训练的大型语言模型。它是一种基于Transfo
 
 ## 1 Windows客户端
 
-待发布
-
+[EasyChatGpt-win64_setup_v1.1.exe](https://github.com/soaringsoul/EasyChatGpt/releases)
 ## 2 Mac客户端
 
 待发布
