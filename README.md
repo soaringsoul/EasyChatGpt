@@ -91,4 +91,4 @@ ChatGPT是一个由OpenAI训练的大型语言模型。它是一种基于Transfo
 
 # Licenses
 
-MIT
+Apache-2.0 license

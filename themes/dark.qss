@@ -105,10 +105,10 @@ Left Menu */
 	background-color: rgb(37, 41, 48);
 	text-align: left;
 	padding-left: 44px;
-	color: rgb(113, 126, 149);
+	color: white;
 }
 #toggleButton:hover {
-	background-color: rgb(40, 44, 52);
+	background-color: #fdc254;
 }
 #toggleButton:pressed {
 	background-color: rgb(189, 147, 249);
@@ -346,7 +346,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
 	border-radius: 0px;
  }
  QScrollBar::handle:vertical {	
-	background: rgb(189, 147, 249);
+	background: #fdc254;
     min-height: 25px;
 	border-radius: 4px
  }

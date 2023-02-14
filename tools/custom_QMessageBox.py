@@ -1,7 +1,7 @@
 from PySide6 import QtGui
 from PySide6.QtWidgets import QMessageBox
 
-from configs.main_config import APPIconPath
+from app_config import APPIconPath
 
 
 def MyQMessageBox(title, text, button1, button2=None, Qicon_fp=APPIconPath):

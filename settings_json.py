@@ -1,4 +1,4 @@
-from configs.main_config import AppVersion
+from app_config import AppVersion
 
 app_settings_json = {
     "latest_version": AppVersion,

@@ -2,7 +2,7 @@
   "header": {
     "comment": "eric project file for project pyside6_app",
     "copyright": "Copyright (C) 2023 , ",
-    "saved": "2023-02-13, 17:17:18"
+    "saved": "2023-02-14, 20:56:32"
   },
   "project": {
     "AUTHOR": "",
@@ -35,12 +35,7 @@
       "makefile": "OTHERS"
     },
     "FORMS": [
-      "memberkey_dialog.ui",
       "webview.ui",
-      "homepage.ui",
-      "poi_js_polygon_search.ui",
-      "poi_js_geocoder.ui",
-      "js_regeocoder.ui",
       "main_page.ui"
     ],
     "HASH": "bf1e052006610d2aa6e3d84c113b006ac61a0281",

@@ -19,7 +19,7 @@ class UpdateCheck(QtCore.QThread):
     # 添加每次方法执行之间的等待时间
     @retry(stop_max_attempt_number=10, wait_fixed=3000)
     def get_cloud_settings_json(self):
-        from configs.main_config import AppCloudSettingsUrl
+        from app_config import AppCloudSettingsUrl
         resq = requests.get(AppCloudSettingsUrl)
         return resq.json()
 

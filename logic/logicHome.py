@@ -3,11 +3,11 @@
 
 import os
 
-from configs.main_config import APPIconPath
+from app_config import APPIconPath
 
 from qt_tools.import_qt_module import *
 from ui.qt6_ui.Ui_homepage import Ui_HomePageMainWindow
-from configs.main_config import AppSettings
+from app_config import AppSettings
 
 
 class HomePageMainWindow(QtWidgets.QMainWindow, Ui_HomePageMainWindow):

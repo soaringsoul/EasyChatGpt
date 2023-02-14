@@ -11,7 +11,6 @@ from ui.qt6_ui.images_rc import *
 import webbrowser
 
 from PySide6 import QtCore, QtWidgets
-from PySide6.QtWebChannel import *
 from PySide6.QtGui import *
 from PySide6.QtCore import *
 from PySide6.QtWidgets import *
@@ -25,12 +24,12 @@ from tools.custom_QMessageBox import MyQMessageBox
 is_mysql_enabled = False
 
 from ui.qt6_ui.Ui_main_page import Ui_MainWindow
-from configs.main_config import AppName, AppVersion, AppConfigDir
+from app_config import AppName, AppVersion, AppConfigDir
 from qt_tools.UiToggleFunctions import UIFunctions
 
 
 class RwbAppLogicMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
-    from configs.main_config import AppSettings
+    from app_config import AppSettings
 
     app_settings = AppSettings
     switch_window = Signal()
@@ -48,26 +47,16 @@ class RwbAppLogicMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.setWindowTitle("%s_v%s" % (AppName, AppVersion))
         self.init_themes()
-        self.init_toggle_gui()
-        #
-        # 初始化配置&加载上一次配置
-        self.create_config_dir()
+        self.init_sign()
+
         # 初始化数据
         self.init_data()
         # 初始化信号
-        self.init_sign()
 
-        # self.init_main_page()
         self.init_logic_guis()
+        self.init_toggle_gui()
 
-    def create_config_dir(self):
-        try:
-            if not os.path.exists(AppConfigDir):
-                os.makedirs(AppConfigDir)
-        except Exception as e:
-            MyQMessageBox('温馨提醒', "出错啦！请关闭此程序后，以管理员身份运行，否则无法正常使用！", '我知道了',
-                          button2=None)
-            logger.error(e)
+
 
     def init_data(self):
         self.df_current_result = None
@@ -104,7 +93,6 @@ class RwbAppLogicMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         pass
 
     def buttonClick(self):
-        # GET BUTTON CLICKED
         btn = self.sender()
         btnName = btn.objectName()
 
@@ -112,7 +100,9 @@ class RwbAppLogicMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if btnName == "btn_home":
             self.stackedWidget.setCurrentWidget(self.page_home)
             home_url = 'https://chat.openai.com/'
+
             self.webview.load(QUrl(home_url))
+
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             self.stackedWidget.setStyleSheet(self.qss_str)
@@ -131,8 +121,7 @@ class RwbAppLogicMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def init_toggle_gui(self):
         # TOGGLE MENU
         self.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True))
-        # LEFT MENUS
-        self.btn_home.clicked.connect(self.buttonClick)
+
         self.extraCloseColumnBtn.clicked.connect(self.openCloseLeftBox)
 
     def openCloseLeftBox(self):
@@ -208,7 +197,7 @@ class RwbAppLogicMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 if __name__ == "__main__":
     import sys
-    from configs.main_config import APPIconPath
+    from app_config import APPIconPath
 
     if getattr(sys, 'frozen', False):
         root_path = os.path.dirname(sys.executable)

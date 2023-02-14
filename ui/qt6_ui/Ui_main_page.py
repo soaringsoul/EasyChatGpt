@@ -1067,7 +1067,7 @@ class Ui_MainWindow(object):
         self.topLogo.setGeometry(QRect(10, 5, 42, 42))
         self.topLogo.setMinimumSize(QSize(42, 42))
         self.topLogo.setMaximumSize(QSize(42, 42))
-        self.topLogo.setStyleSheet(u"background-image: url(:/icon/images/images/renwenbang.png);")
+        self.topLogo.setStyleSheet(u"background-image: url(:/rwb_icons/images/rwb_icons/rwb_logo_40.png);")
         self.topLogo.setFrameShape(QFrame.NoFrame)
         self.topLogo.setFrameShadow(QFrame.Raised)
         self.titleLeftApp = QLabel(self.topLogoInfo)
@@ -1122,7 +1122,7 @@ class Ui_MainWindow(object):
         self.toggleButton.setFont(font)
         self.toggleButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.toggleButton.setLayoutDirection(Qt.LeftToRight)
-        self.toggleButton.setStyleSheet(u"background-image: url(:/icon/images/icons/cil-menu.png);")
+        self.toggleButton.setStyleSheet(u"background-image: url(:/icon/images/icons/icon_menu.png);")
 
         self.verticalLayout_4.addWidget(self.toggleButton)
 
@@ -1196,7 +1196,8 @@ class Ui_MainWindow(object):
         self.btn_settings.setFont(font)
         self.btn_settings.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_settings.setLayoutDirection(Qt.LeftToRight)
-        self.btn_settings.setStyleSheet(u"background-image: url(:/icon/images/icons/icon_settings.png);")
+        self.btn_settings.setStyleSheet(u"background-image: url(:/icon/images/icons/icon_settings.png);\n"
+"color: rgb(255, 255, 255);")
 
         self.verticalLayout_9.addWidget(self.btn_settings)
 
@@ -1221,7 +1222,7 @@ class Ui_MainWindow(object):
         self.extraColumLayout.setContentsMargins(0, 0, 0, 0)
         self.extraTopBg = QFrame(self.extraLeftBox)
         self.extraTopBg.setObjectName(u"extraTopBg")
-        self.extraTopBg.setMinimumSize(QSize(0, 50))
+        self.extraTopBg.setMinimumSize(QSize(0, 30))
         self.extraTopBg.setMaximumSize(QSize(16777215, 50))
         self.extraTopBg.setFrameShape(QFrame.NoFrame)
         self.extraTopBg.setFrameShadow(QFrame.Raised)
@@ -1233,34 +1234,25 @@ class Ui_MainWindow(object):
         self.extraTopLayout.setObjectName(u"extraTopLayout")
         self.extraTopLayout.setHorizontalSpacing(10)
         self.extraTopLayout.setVerticalSpacing(0)
-        self.extraTopLayout.setContentsMargins(10, -1, 10, -1)
-        self.extraIcon = QFrame(self.extraTopBg)
-        self.extraIcon.setObjectName(u"extraIcon")
-        self.extraIcon.setMinimumSize(QSize(20, 0))
-        self.extraIcon.setMaximumSize(QSize(20, 20))
-        self.extraIcon.setFrameShape(QFrame.NoFrame)
-        self.extraIcon.setFrameShadow(QFrame.Raised)
-
-        self.extraTopLayout.addWidget(self.extraIcon, 0, 0, 1, 1)
-
-        self.extraLabel = QLabel(self.extraTopBg)
-        self.extraLabel.setObjectName(u"extraLabel")
-        self.extraLabel.setMinimumSize(QSize(150, 0))
-        self.extraLabel.setStyleSheet(u"color: rgb(66, 66, 66);")
-
-        self.extraTopLayout.addWidget(self.extraLabel, 0, 1, 1, 1)
-
+        self.extraTopLayout.setContentsMargins(0, 0, 0, -1)
         self.extraCloseColumnBtn = QPushButton(self.extraTopBg)
         self.extraCloseColumnBtn.setObjectName(u"extraCloseColumnBtn")
         self.extraCloseColumnBtn.setMinimumSize(QSize(0, 0))
         self.extraCloseColumnBtn.setMaximumSize(QSize(28, 28))
         self.extraCloseColumnBtn.setCursor(QCursor(Qt.PointingHandCursor))
         icon2 = QIcon()
-        icon2.addFile(u":/icons/images/icons/icon_close.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/icon/images/icons/icon_close-circle-filled.png", QSize(), QIcon.Normal, QIcon.Off)
         self.extraCloseColumnBtn.setIcon(icon2)
         self.extraCloseColumnBtn.setIconSize(QSize(20, 20))
 
-        self.extraTopLayout.addWidget(self.extraCloseColumnBtn, 0, 2, 1, 1)
+        self.extraTopLayout.addWidget(self.extraCloseColumnBtn, 0, 1, 1, 1)
+
+        self.extraLabel = QLabel(self.extraTopBg)
+        self.extraLabel.setObjectName(u"extraLabel")
+        self.extraLabel.setMinimumSize(QSize(100, 0))
+        self.extraLabel.setStyleSheet(u"color: rgb(66, 66, 66);")
+
+        self.extraTopLayout.addWidget(self.extraLabel, 0, 0, 1, 1)
 
 
         self.verticalLayout_5.addLayout(self.extraTopLayout)
@@ -1434,17 +1426,17 @@ class Ui_MainWindow(object):
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"\u9690\u85cf", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"\u9996\u9875", None))
         self.btn_settings.setText(QCoreApplication.translate("MainWindow", u"\u8bbe\u7f6e", None))
-        self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">\u9009\u62e9\u89d2\u8272</p></body></html>", None))
 #if QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close left box", None))
 #endif // QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setText("")
+        self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">\u9009\u62e9\u89d2\u8272</p></body></html>", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_cn), QCoreApplication.translate("MainWindow", u"\u4e2d\u6587", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_en), QCoreApplication.translate("MainWindow", u"\u82f1\u6587", None))
         self.pushButton_copy.setText(QCoreApplication.translate("MainWindow", u"\u4e00\u952e\u590d\u5236", None))
         self.label_copy_info.setText("")
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.menu.setTitle(QCoreApplication.translate("MainWindow", u"\u83dc\u5355", None))
+        self.menu.setTitle(QCoreApplication.translate("MainWindow", u"\u5e2e\u52a9\u83dc\u5355", None))
     # retranslateUi
 
