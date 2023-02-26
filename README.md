@@ -12,7 +12,7 @@ ChatGPT是一个由OpenAI训练的大型语言模型。它是一种基于Transfo
 
 但还是有很多人并不知道如何去使用，尤其是chatGpt的全英文操作，对一些同学来说会有较大的一个门槛。
 
-本项目使用`PySide6`实现图形界面，对OpenApi提供的chatGPt进行封装，在保留原有基础上加上更多目前在GitHub上开源的不同角色的「prompts」，查询、点击、复制，粘贴就可以初始化chatGpt，帮助大家一键上手和使用。
+
 
 本项目开源，Python` 依赖见[requirements.txt](./requirements.txt) .
 
@@ -26,7 +26,11 @@ ChatGPT是一个由OpenAI训练的大型语言模型。它是一种基于Transfo
 
 
 # 说明
-本工具是对[chat.openai.com](https://chat.openai.com/),以及Github上[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts),[awesome-chatgpt-prompts-zh](https://github.com/soaringsoul/awesome-chatgpt-prompts-zh)
+本工具是对[chat.openai.com](https://chat.openai.com/),以及Github上[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts),[awesome-chatgpt-prompts-zh](https://github.com/soaringsoul/awesome-chatgpt-prompts-zh)的封装。
+  
+使用`PySide6`实现图形界面，对OpenApi提供的chatGPt进行封装，在保留原有基础上加上更多目前在GitHub上开源的不同角色的「prompts」，查询、点击、复制，粘贴就可以初始化chatGpt。
+  
+帮助大家一键上手和使用。
 
 
 
