@@ -15,8 +15,7 @@ AppEnName = 'EasyChatGpt'
 APPIconPath = ':/icon/images/icons/favicon.png'
 AppVersion = 1.1
 
-# APP 云端配置信息
-AppCloudSettingsUrl = 'https://202212-amap-tools-1258828407.cos.ap-guangzhou.myqcloud.com/lbs.amap.assistant_settings.json'
+
 # 设置APP config信息
 AppConfigDir = os.path.join(root_path, 'AppConfig')
 # 不需要带.ini后缀
